@@ -1,77 +1,142 @@
-# Typescript, Express and Mysql Application
+# Unicesumar Blog
 
-### Documento de Requisitos
+![Banner do Blog](path/to/banner.png)
 
-[Espeficicação de Requisitos e Avaliação Bimestral](https://docs.google.com/document/d/1yvZnEVfoK7_QiZc_B0FME_ZE8zQEMO95XcRXBQgdEiE/edit?usp=sharing)
+## 📖 Descrição
 
-### Passo 1: Inicializando o Projeto com TypeScript
+O **Unicesumar Blog** é um projeto desenvolvido para a instituição de ensino Unicesumar com o objetivo de criar um novo blog onde colaboradores possam acessar as últimas informações sobre a instituição, além de conteúdos acadêmicos e administrativos.
 
-1.	Inicialize o projeto:
+## 🚀 Funcionalidades
+
+- **Cadastro de Usuários**: Permite que apenas usuários cadastrados tenham acesso ao blog.
+- **Página de Login**: Autenticação segura para acesso ao sistema.
+- **Página Inicial**: Interface estática com informações e links relevantes.
+
+## 🛠 Tecnologias Utilizadas
+
+- **Frontend**: HTML5, CSS3
+- **Backend**: Node.js, Express.js
+- **Banco de Dados**: MySQL
+- **Controle de Versão**: Git
+
+## 📝 Instalação
+
+Siga os passos abaixo para configurar o projeto localmente:
+
+### 1. Clone o Repositório
+
 ```bash
-mkdir mysql-api-ads
-cd mysql-api-ads
-npm init -y
+git clone https://github.com/rafael-labegalini/mysql-api-adsb.git
+cd mysql-api-adsb
 ```
 
-2.	Instale as dependências:
-```bash
-npm install express ejs mysql2
-```
+2. Instale as Dependências
 
-3.	Instale o TypeScript e as definições de tipo para Express:
-```bash
-npm install typescript ts-node @types/node @types/express @types/mysql --save-dev
-```
+Certifique-se de ter o Node.js e o MySQL instalados.
 
-4.	Crie o arquivo de configuração do TypeScript:
-```bash
-npx tsc --init
-```
+bash
 
-5.	Subistitua o conteúdo do arquivo `tsconfig.json` gerado pelo comando anterior pelo conteúdo a seguir:
-```json
-{
-  "compilerOptions": {
-    "target": "ES2023",
-    "module": "commonjs",
-    "strict": false,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "outDir": "./dist"
-  },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules"]
-}
-```
+npm install
 
-### Passo 2: Criando a Estrutura de Pastas
+3. Configuração do Banco de Dados
 
-1.	Crie a pasta `src`, `src/views` e dentro da pasta `src` o arquivo `index.ts`:
-```bash
-mkdir src
-mkdir src/views
-touch src/index.ts
-```
+   Crie um banco de dados no MySQL.
 
-### Passo 3: Codificando
+   Configure as variáveis de ambiente no arquivo .env com as credenciais do banco de dados:
 
-1. Codifique o arquivo `src/index.ts` seguindo o código do [repositório original](https://github.com/rafael-labegalini/mysql-api-adsb/blob/main/src/index.ts). Caso o arquivo não exista no seu projeto crie-o.
+   env
 
-2. Crie os arquivos de templates dentro do diretório `src/views` seguindo a mesma estrutura do [repositório original](https://github.com/rafael-labegalini/mysql-api-adsb/tree/main/src/views)
+   DB_HOST=localhost
+   DB_USER=seu_usuario
+   DB_PASSWORD=sua_senha
+   DB_NAME=nome_do_banco
 
-### Passo 4: Rodando a Aplicação
-1.	Criar o script de inicialização da aplicação no `package.json`:
-```json
-"scripts": {
-    "start": "ts-node --transpile-only src/index.ts"
-},
-```
+4. Inicie o Servidor
 
-2. Criar o arquivo `docker-compose.yaml` na raiz do projeto seguindo o modelo disponibilizado no [repositório original](https://github.com/rafael-labegalini/mysql-api-adsb/blob/main/docker-compose.yaml)
+bash
 
-Para executar a aplicação agora use os seguintes comandos:
-```bash
-docker compose up -d
 npm start
-```
-> PS: Certifique-se de que seu docker esteja rodando 
+
+5. Acesse a Aplicação
+
+Abra o navegador e vá para http://localhost:3000.
+📚 Uso
+
+    Cadastro de Usuários: Acesse /users para gerenciar os usuários cadastrados.
+    Login: Acesse /login para autenticar-se no sistema.
+    Página Inicial: Acesse / para visualizar a página inicial do blog.
+
+🤝 Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+📝 Licença
+
+Este projeto está licenciado sob a MIT License.
+👤 Desenvolvido por
+
+Pedro
+
+perl
+
+### Dicas para Melhorar seu README
+
+1. **Adicione um Banner**: Substitua `path/to/banner.png` pela URL da imagem que deseja usar como banner no topo do seu README.
+
+2. **Badges**: Você pode adicionar badges para status do build, licenças, versões, etc. Por exemplo:
+
+   ```markdown
+   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+   Capturas de Tela: Incluir imagens ou GIFs demonstrando a aplicação em funcionamento pode tornar o README mais atraente.
+
+   Links Úteis: Adicione links para a documentação, issues, ou qualquer outro recurso relevante.
+
+   Seção de FAQ: Responda às perguntas frequentes que os usuários ou colaboradores possam ter.
+
+   Estrutura de Pastas: Descreva brevemente a estrutura de diretórios do projeto, se for relevante.
+   ```
+
+Exemplo com Badges e Capturas de Tela
+
+markdown
+
+# Unicesumar Blog
+
+![Banner do Blog](https://link-para-sua-imagem-banner.png)
+
+![Node.js](https://img.shields.io/badge/Node.js-v14.17.0-green)
+![Express.js](https://img.shields.io/badge/Express.js-4.17.1-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.23-blue)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## 📖 Descrição
+
+...
+
+## 🚀 Funcionalidades
+
+...
+
+## 🛠 Tecnologias Utilizadas
+
+...
+
+## 📝 Instalação
+
+...
+
+## 📚 Uso
+
+...
+
+## 🤝 Contribuição
+
+...
+
+## 📝 Licença
+
+...
+
+## 👤 Desenvolvido por
+
+...
