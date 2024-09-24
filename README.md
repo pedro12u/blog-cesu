@@ -1,6 +1,11 @@
 # Unicesumar Blog
 
-![Banner do Blog](path/to/banner.png)
+<!-- ![Banner do Blog](path/to/banner.png) -->
+
+![Node.js](https://img.shields.io/badge/Node.js-v14.17.0-green)
+![Express.js](https://img.shields.io/badge/Express.js-4.17.1-blue)
+![MySQL](https://img.shields.io/badge/MySQL-8.0.23-blue)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## 📖 Descrição
 
@@ -42,14 +47,14 @@ npm install
 
    Crie um banco de dados no MySQL.
 
-   Configure as variáveis de ambiente no arquivo .env com as credenciais do banco de dados:
+   Configure as variáveis de ambiente no arquivo sql.env com as credenciais do banco de dados:
 
-   env
-
+```bash
    DB_HOST=localhost
    DB_USER=seu_usuario
    DB_PASSWORD=sua_senha
    DB_NAME=nome_do_banco
+```
 
 4. Inicie o Servidor
 
@@ -63,12 +68,14 @@ Abra o navegador e vá para http://localhost:3000.
 
 📚 Uso
 
+```bash
     Cadastro de Usuários: Acesse /users para gerenciar os usuários cadastrados.
     Login: Acesse /login para autenticar-se no sistema.
     Página Inicial: Acesse / para visualizar a página inicial do blog.
+```
 
 🤝 Contribuição: Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
 📝 Licença: Este projeto está licenciado sob a MIT License.
 
-👤 Desenvolvido por: Pedro Toscano.
+👤 Desenvolvido por Pedro Toscano [github.com/pedro12u](https://github.com/pedro12u)
