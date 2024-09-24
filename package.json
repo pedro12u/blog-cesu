@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "[Espeficicação de Requisitos e Avaliação Bimestral](https://docs.google.com/document/d/1yvZnEVfoK7_QiZc_B0FME_ZE8zQEMO95XcRXBQgdEiE/edit?usp=sharing)",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.0",
