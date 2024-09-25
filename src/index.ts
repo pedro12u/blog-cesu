@@ -1,7 +1,8 @@
 import dotenv from "dotenv";
-dotenv.config();
 import express, { Request, Response } from "express";
 import mysql from "mysql2/promise";
+
+dotenv.config();
 
 const app = express();
 
@@ -12,9 +13,9 @@ app.set("views", `${__dirname}/views`);
 const connection = mysql.createPool({
   host: "localhost",
   port: 3306,
-  user: "sql.env.MYSQL_USER",
-  password: "sql.env.MYSQL_PASSWORD",
-  database: "sql.env.MYSQL_DATABASE",
+  user: "process.env.MYSQL_USER",
+  password: "process.env.MYSQL_PASSWORD",
+  database: "process.env.MYSQL_DATABASE",
 });
 
 // Middleware para permitir dados no formato JSON
