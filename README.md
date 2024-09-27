@@ -16,13 +16,14 @@ O **Unicesumar Blog** é um projeto desenvolvido para a instituição de ensino 
 - **Cadastro de Usuários**: Permite que apenas usuários cadastrados tenham acesso ao blog.
 - **Página de Login**: Autenticação segura para acesso ao sistema.
 - **Página Inicial**: Interface estática com informações e links relevantes.
+- **Esqueci Minha Senha**: Simulação de funcionalidade com alerta informando que a recuperação de senha não está implementada.
 
 ## 🛠 Tecnologias Utilizadas
 
-- **Frontend**: HTML5, CSS3
-- **Backend**: Node.js, Express.js
+- **Frontend**: HTML5, CSS3 e Bootstrap 5 (estilização e responsividade)
+- **Backend**: Node.js, Express.js, bcrypt(para criptografia de senhas)
 - **Banco de Dados**: MySQL
-- **Controle de Versão**: Git
+- **Controle de Versão**: Git e GitHub
 
 ## 📝 Instalação
 
@@ -63,18 +64,42 @@ npm start
 ```
 
 5. Acesse a Aplicação
-   
+
 Abra o navegador e vá para http://localhost:3000.
 
 📚 Uso
 
 ```bash
-    Cadastro de Usuários: Acesse /users para gerenciar os usuários cadastrados.
-    Login: Acesse /login para autenticar-se no sistema.
-    Página Inicial: Acesse / para visualizar a página inicial do blog.
+Cadastro de Usuários:
+    Acesse /users para visualizar a lista de usuários.
+    Acesse /users/add para adicionar novos usuários.
+
+Login:
+    Acesse /login para autenticar-se no sistema.
+
+Página Inicial do Blog:
+    Acesse / para visualizar a página inicial com os últimos posts do blog.
+    Essa página exibe posts simulados com conteúdo fictício e links para visualizações detalhadas.
+
+Esqueci Minha Senha:
+    A funcionalidade de recuperação de senha não está implementada, mas ao acessar /forgot-password, um alerta será exibido indicando que esta é apenas uma simulação.
 ```
 
-🤝 Contribuição: Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+🔧 Melhorias e Funcionalidades Futuras
+
+```bash
+    Recuperação de Senha: Implementação real da funcionalidade "Esqueci Minha Senha", com envio de e-mail.
+    Gerenciamento de Posts: Possibilidade de criar, editar e excluir postagens do blog diretamente na interface.
+    Paginação: Implementação de paginação para navegação entre posts mais antigos.
+```
+
+🤝 Contribuição: Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
+
+1. Faça um fork do projeto
+2. Crie uma branch: git checkout -b minha-feature
+3. Envie suas alterações: git commit -m 'Adicionando minha feature'
+4. Faça um push para a branch: git push origin minha-feature
+5. Abra um Pull Request
 
 📝 Licença: Este projeto está licenciado sob a MIT License.
 
