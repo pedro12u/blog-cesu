@@ -12,7 +12,7 @@ app.set("views", `${__dirname}/views`);
 
 const connection = mysql.createPool({
   host: "localhost",
-  port: 3307,
+  port: 3306,
   user: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
   database: process.env.MYSQL_DATABASE,
